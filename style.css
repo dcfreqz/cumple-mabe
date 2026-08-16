@@ -30,6 +30,22 @@ body {
     position: relative;
 }
 
+/* Estilo para el logo principal de la página */
+.logo-pagina {
+    width: 200px; /* Puedes hacer este número más grande o pequeño si quieres */
+    height: auto;
+    margin: 0 auto 20px auto; /* Lo centra y le da espacio abajo */
+    display: block;
+    border-radius: 50%; /* Lo hace redondo por si acaso */
+    box-shadow: 0 4px 15px rgba(106, 27, 154, 0.3); /* Sombrita morada */
+    transition: transform 0.3s;
+}
+
+/* Efecto para que el logo crezca un poquito si le pasa el mouse por encima */
+.logo-pagina:hover {
+    transform: scale(1.05);
+}
+
 /* Títulos con el morado oscuro de BTS */
 .titulo-principal {
     color: #6a1b9a;
