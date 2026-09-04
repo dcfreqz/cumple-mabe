@@ -3,13 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Día 4 - Mabe</title> <!-- Cambia la X por el número del día -->
+    <title>Día 4 - Mabe</title> 
     
     <!-- Favicon -->
     <link rel="icon" href="../logo.png">
     
     <!-- Estilos BTS -->
     <link rel="stylesheet" href="../style.css">
+    
+    <style>
+        /* Estilos para las cajitas desplegables */
+        details {
+            background-color: #f3e5f5;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(106, 27, 154, 0.1);
+        }
+        summary {
+            font-weight: bold;
+            color: #6a1b9a;
+            font-size: 1.2em;
+            cursor: pointer;
+            list-style: none;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        .top-content {
+            margin-top: 15px;
+            padding-left: 10px;
+            border-left: 3px solid #ab47bc;
+            color: #333;
+        }
+        /* Estilo para las fotitos de los tops */
+        .img-top {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            display: block;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -20,16 +57,98 @@
         <img src="../logo.png" alt="Logo Cumple" class="logo-pagina">
 
         <!-- Título del día -->
-        <h2 class="titulo-principal" style="font-size: 2em; margin-bottom: 10px;">Día 4: [En construcción]</h2>
+        <h2 class="titulo-principal" style="font-size: 2em; margin-bottom: 10px;">Día 4: El día de los Top 3</h2>
         
-        <!-- CONTENIDO ANTI-TRAMPAS -->
-        <div class="contenido-dia" style="text-align: center; margin-top: 50px;">
-            <h3 style="color: #6a1b9a; font-size: 2em; margin-bottom: 20px;">¡Ey, ey, ey! 🚨</h3>
-            <p style="font-size: 1.2em; color: #333; line-height: 1.6;">
-                ¡Te caché intentando hacer trampa! JAJAJA. 👀<br><br>
-                Aprecio muchísimo la curiosidad, pero vas a tener que esperar a que sea el día que corresponde para leer esto. ¡Aquí no hay spoilers!
-            </p>
-            <p style="margin-top: 30px; font-size: 4em;">🤫💜</p>
+        <!-- CONTENIDO DE LA CARTA -->
+        <div class="contenido-dia" style="text-align: left; line-height: 1.8; margin-top: 20px; font-size: 1.1em; color: #333;">
+            
+            <p>¡Llegamos al Día 4! Y hoy la temática es : El día de los Top 3.</p>
+            
+            <p>Como tienes una personalidad tan marcada y llena de cosas icónicas, no podía elegir solo una categoría. Así que armé varios Tops de cosas que, apenas las veo o las escucho, mi cerebro automáticamente dice "Mabel".</p>
+            
+            <p style="text-align: center; font-weight: bold; color: #ab47bc; margin: 25px 0;">👇 Toca cada categoría para descubrir los ganadores 👇</p>
+
+            <!-- CAJITA 1 -->
+            <details>
+                <summary>🎵 Top 3 Artistas</summary>
+                <div class="top-content">
+                    <p><strong>Puesto 3:</strong> Taylor Swift.</p>
+                    <img src="../artista3.jpg" alt="Taylor Swift" class="img-top">
+                    
+                    <p><strong>Puesto 2:</strong> Tini tiniiiiiiiiiiiiiiiiiiiiii.</p>
+                    <img src="../artista2.jpg" alt="Tini" class="img-top">
+                    
+                    <p><strong>Puesto 1:</strong> BTS (los reyes indiscutibles de tu playlist).</p>
+                    <img src="../artista1.jpg" alt="BTS" class="img-top">
+                </div>
+            </details>
+
+            <!-- CAJITA 2 -->
+            <details>
+                <summary>🍔 Top 3 Comidas</summary>
+                <div class="top-content">
+                    <p><strong>Puesto 3:</strong> Hamburguesas.</p>
+                    <img src="../comida3.jpg" alt="Hamburguesas" class="img-top">
+                    
+                    <p><strong>Puesto 2:</strong> Alitas.</p>
+                    <img src="../comida2.jpg" alt="Alitas" class="img-top">
+                    
+                    <p><strong>Puesto 1:</strong> Sushi.</p>
+                    <img src="../comida1.jpg" alt="Sushi" class="img-top">
+                    
+                    <p><em>(Aunque siendo 100% honestos, por encima del top y en un nivel inalcanzable están los patacones y la comida de tu mamá JAJAJA).</em></p>
+                </div>
+            </details>
+
+            <!-- CAJITA 3 -->
+            <details>
+                <summary>🍹 Top 3 Bebidas</summary>
+                <div class="top-content">
+                    <p><strong>Puesto 3:</strong> Un buen mojito.</p>
+                    <img src="../bebida3.jpg" alt="Mojito" class="img-top">
+                    
+                    <p><strong>Puesto 2:</strong> Café.</p>
+                    <img src="../bebida2.jpg" alt="Cafe" class="img-top">
+                    
+                    <p><strong>Puesto 1:</strong> Yogurt de arándanos, tu marido de por vida JAJAJA.</p>
+                    <img src="../bebida1.jpg" alt="Yogurt de arandanos" class="img-top">
+                </div>
+            </details>
+
+            <!-- CAJITA 4 -->
+            <details>
+                <summary>👓 Top 3 Objetos 100% tuyos</summary>
+                <div class="top-content">
+                    <p><strong>Puesto 3:</strong> Tus labiales y delineados impecables.</p>
+                    <img src="../objeto3.jpg" alt="Maquillaje" class="img-top">
+                    
+                    <p><strong>Puesto 2:</strong> Tu rímel.</p>
+                    <img src="../objeto2.jpg" alt="Rimel" class="img-top">
+                    
+                    <p><strong>Puesto 1:</strong> Tus lentes, no tenia foto de tus lentes</p>
+                    <img src="../objeto1.jpg" alt="Lentes" class="img-top">
+                </div>
+            </details>
+
+            <!-- CAJITA 5 -->
+            <details>
+                <summary>🛋️ Top 3 Actividades de tu día a día</summary>
+                <div class="top-content">
+                    <p><strong>Puesto 3:</strong> super vivir la música y el cine.</p>
+                    <img src="../actividad3.jpg" alt="Cine y musica" class="img-top">
+                    
+                    <p><strong>Puesto 2:</strong> Ser explotada laboralmente JAJAJA.</p>
+                    <img src="../actividad2.jpg" alt="Explotacion laboral" class="img-top">
+                    
+                    <p><strong>Puesto 1:</strong> Quedarte dormida en el sillón y matarte el cuello.</p>
+                    <img src="../actividad1.jpg" alt="Dormir" class="img-top">
+                </div>
+            </details>
+
+            <p style="margin-top: 30px;">Espero que te hayas reído con estos tops porque son literalmente tu esencia resumida en listas.</p>
+            
+            <p style="text-align: center; font-weight: bold; color: #6a1b9a; margin-top: 30px; font-size: 1.2em;">¡Vuelve mañana para el día 5! 💜</p>
+            
         </div>
     </div>
     
