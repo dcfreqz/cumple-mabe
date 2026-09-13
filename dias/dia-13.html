@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Día 13 - Mabe</title> <!-- Cambia la X por el número del día -->
+    <title>Día 13 - Mabe</title> 
     
     <!-- Favicon -->
     <link rel="icon" href="../logo.png">
     
     <!-- Estilos BTS -->
     <link rel="stylesheet" href="../style.css">
+    
+    <style>
+        .botones-finales {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 35px;
+        }
+        .botones-finales button {
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #8e24aa;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(106, 27, 154, 0.3);
+            transition: background-color 0.3s;
+        }
+        .botones-finales button:hover {
+            background-color: #6a1b9a;
+        }
+        .final-historia {
+            margin-top: 30px;
+            padding: 25px;
+            background-color: #f3e5f5;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(106, 27, 154, 0.15);
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -20,20 +52,70 @@
         <img src="../logo.png" alt="Logo Cumple" class="logo-pagina">
 
         <!-- Título del día -->
-        <h2 class="titulo-principal" style="font-size: 2em; margin-bottom: 10px;">Día 13: [En construcción]</h2>
+        <h2 class="titulo-principal" style="font-size: 2em; margin-bottom: 10px;">Día 13: La Magia de las Páginas</h2>
         
-        <!-- CONTENIDO ANTI-TRAMPAS -->
-        <div class="contenido-dia" style="text-align: center; margin-top: 50px;">
-            <h3 style="color: #6a1b9a; font-size: 2em; margin-bottom: 20px;">¡Ey, ey, ey! 🚨</h3>
-            <p style="font-size: 1.2em; color: #333; line-height: 1.6;">
-                ¡Te caché intentando hacer trampa! JAJAJA. 👀<br><br>
-                Aprecio muchísimo la curiosidad, pero vas a tener que esperar a que sea el día que corresponde para leer esto. ¡Aquí no hay spoilers!
-            </p>
-            <p style="margin-top: 30px; font-size: 4em;">🤫💜</p>
+        <!-- CONTENIDO DE LA CARTA -->
+        <div class="contenido-dia" style="text-align: left; line-height: 1.8; margin-top: 20px; font-size: 1.1em; color: #333;">
+            
+            <p>Llegamos al Día 13 y hoy tenemos nuestra historia especial. Una donde tú eres la protagonista absoluta.</p>
+
+            <p>Todo empezó un día cualquiera. Eras una chica común con una rutina de trabajo y estudio que una noche estaba devorando un libro como es su costumbre. De pronto viste pasar una estrella fugaz por tu ventana. Cautivada por la historia que leías dijiste en voz alta: "Ay cómo quisiera que estas cosas pasaran en la vida real".</p>
+            
+            <p>La estrella te escuchó y sin que lo supieras te concedió el deseo.</p>
+            
+            <p>Al día siguiente te despertaste, te hiciste tu makeup impecable y fuiste a tu trabajo en la tienda de ropa de bebés. Todo iba normal hasta que viste entrar a dos jóvenes enamorados. Para tu sorpresa eran exactamente los mismos personajes del libro que habías leído la noche anterior. Estaban ahí bromeando sobre cómo sería su vida cuando fueran papás, todo un cliché de romance.</p>
+            
+            <p>Aún sin poder creerlo los atendiste. Cuando los chicos salieron de la tienda quisiste seguirlos para buscar respuestas, pero al cruzar la puerta simplemente se desvanecieron.</p>
+            
+            <p>Confundida volviste a entrar. En tu hora de almuerzo mientras hacías scroll en TikTok viste que mucha gente reportaba haber visto una estrella fugaz la noche anterior. Justo a la hora de tu deseo. Tu curiosidad le ganó a la lógica. Agarraste tu libro de nuevo, imaginaste a los personajes un poco diferentes y al levantar la vista ahí estaban otra vez.</p>
+            
+            <p>Asustada soltaste el libro y diste un paso atrás. Tú tenías el control.</p>
+            
+            <p>Entraste en pánico. Si podías traer personajes lindos también podías traer a la vida a cualquier villano o psicópata de los thrillers que lees. Pasó el día y en la noche muerta de hambre fuiste por un postre a JV. Agarraste el menú pensando qué pedir y de repente en tu mesa ya estaba una tarta vasca perfecta. Le metiste la cuchara muerta de miedo y era real. No solo funcionaba con libros, funcionaba con cualquier cosa que leyeras.</p>
+            
+            <p>Los pensamientos intrusivos te traicionaron. Pensaste en un mago maléfico de una historia que habías leído días atrás. ¿Y si aparece y me quiere matar sin razón? Mala idea Mabe.</p>
+            
+            <p>El mago apareció en pleno shopping y empezó a destruirlo todo. No te quedó más que correr. Entraste al Comisariato para esconderte entre los pasillos mientras el villano te perseguía sin descanso.</p>
+            
+            <p>El mago te acorraló contra la pared. No había escape. Pero mientras el villano celebraba su victoria anticipada la suerte te sonrió. Junto a ti había un catálogo de camiones. Lo agarraste, lo abriste y empezaste a leer a toda velocidad. En un instante generaste toneladas y toneladas de acero que cayeron sobre el mago aplastándolo por completo.</p>
+            
+            <p>Al desaparecer el villano también desaparecieron los camiones y en su lugar solo quedó un pequeño libro de pocas páginas que narraba lo que acababa de pasar.</p>
+            
+            <p style="font-weight: bold; color: #8e24aa; margin-top: 30px; text-align: center;">Ahora tenías una decisión muy importante que tomar. ¿Qué harías con tanto poder?</p>
+
+            <!-- BOTONES PARA ELEGIR EL FINAL -->
+            <div class="botones-finales">
+                <button onclick="mostrarFinal('final1')">Quiero el Final Realista</button>
+                <button onclick="mostrarFinal('final2')">Quiero el Final Heroico</button>
+            </div>
+
+            <!-- FINAL 1 -->
+            <div id="final1" class="final-historia">
+                <h3 style="color: #6a1b9a; margin-top: 0;">El Final Realista 📖</h3>
+                <p>Con miedo de que pasara de nuevo y alguien saliera herido, y sobre todo con terror de perder tu amor por la lectura, buscaste desesperadamente un libro que mencionara una estrella fugaz. Leíste la página, hiciste aparecer la estrella y pediste que todo volviera a la normalidad.</p>
+                <p>Aunque tuviste magia en tus manos decidiste soltarla porque para ti leer ya es lo más cercano a la magia que conoces y en este momento es lo más cercano a la magia que quieres estar.</p>
+            </div>
+
+            <!-- FINAL 2 -->
+            <div id="final2" class="final-historia">
+                <h3 style="color: #6a1b9a; margin-top: 0;">El Final Heroico 🦸‍♀️</h3>
+                <p>Reflexionando sobre lo que acababa de pasar recordaste las sabias palabras del tío Ben: un gran poder conlleva una gran responsabilidad. Decidiste usar tu don para el bien. Llenaste tu mochila de libros con curas mágicas e inventos milagrosos para traerlos a la realidad y ayudar a todo el mundo.</p>
+                <p>Ahora pasarías tus días como una heroína de cuento en la vida real, porque antes leer era lo más cercano a la magia pero ahora tú misma eres la magia.</p>
+            </div>
+
+            <p style="text-align: center; font-weight: bold; color: #6a1b9a; margin-top: 40px; font-size: 1.2em;">¡Nos vemos mañana en la gran víspera! 💜</p>
+            
         </div>
     </div>
     
-    <!-- Script para los globitos -->
+    <!-- Script para cambiar los finales sin usar puntos y comas -->
+    <script>
+        function mostrarFinal(id) {
+            document.getElementById('final1').style.display = 'none'
+            document.getElementById('final2').style.display = 'none'
+            document.getElementById(id).style.display = 'block'
+        }
+    </script>
     <script src="../script.js"></script>
 </body>
 </html>
