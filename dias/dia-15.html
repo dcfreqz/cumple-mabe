@@ -3,37 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Día 15 - Mabe</title> <!-- Cambia la X por el número del día -->
+    <title>¡ALERTA!</title> 
     
     <!-- Favicon -->
     <link rel="icon" href="../logo.png">
     
     <!-- Estilos BTS -->
     <link rel="stylesheet" href="../style.css">
+    
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .container {
+            background-color: #222;
+            border: 2px solid #d32f2f;
+            transition: background-color 0.5s, border 0.5s;
+        }
+        .titulo-principal {
+            color: #ff5252;
+            transition: color 0.5s;
+        }
+        #contador-box {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .numero-contador {
+            font-size: 5em;
+            font-weight: 900;
+            color: #ff5252;
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
+        #mensaje-broma {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <!-- Botón para regresar al calendario -->
-        <a href="../index.html" style="display: block; text-align: left; text-decoration: none; color: #8e24aa; font-weight: bold; margin-bottom: 20px;">← Volver al inicio</a>
         
-        <!-- Logo de la página -->
-        <img src="../logo.png" alt="Logo Cumple" class="logo-pagina">
+        <h2 class="titulo-principal" style="font-size: 2.5em; text-align: center;">¡ALERTA DE INTRUSA!</h2>
+        
+        <div class="contenido-dia" style="font-size: 1.2em; line-height: 1.8;">
+            
+            <div id="fase-alerta">
+                <p style="text-align: center; color: #ff5252; font-weight: bold; font-size: 1.5em;">Uy qué desobediente.</p>
+                <p style="text-align: center;">Ahí decía claramente NO TOCAR pero tu curiosidad pudo más JAJAJA.</p>
+                <p style="text-align: center;">Activando secuencia de autodestrucción de la página en...</p>
+                
+                <div id="contador-box">
+                    <span class="numero-contador" id="numero">5</span>
+                </div>
+            </div>
 
-        <!-- Título del día -->
-        <h2 class="titulo-principal" style="font-size: 2em; margin-bottom: 10px;">Día 15: [En construcción]</h2>
-        
-        <!-- CONTENIDO ANTI-TRAMPAS -->
-        <div class="contenido-dia" style="text-align: center; margin-top: 50px;">
-            <h3 style="color: #6a1b9a; font-size: 2em; margin-bottom: 20px;">¡Ey, ey, ey! 🚨</h3>
-            <p style="font-size: 1.2em; color: #333; line-height: 1.6;">
-                ¡Te caché intentando hacer trampa! JAJAJA. 👀<br><br>
-                Aprecio muchísimo la curiosidad, pero vas a tener que esperar a que sea el día que corresponde para leer esto. ¡Aquí no hay spoilers!
-            </p>
-            <p style="margin-top: 30px; font-size: 4em;">🤫💜</p>
+            <div id="mensaje-broma">
+                <p style="color: #4caf50; font-weight: bold; font-size: 1.5em;">¡CAÍSTE JAJAJA!</p>
+                <p>No vas a ver ningún spoiler hoy. Tendrás que esperar a la medianoche para ver tu verdadero regalo.</p>
+                <p>Anda a dormir y nos vemos mañana para celebrar tu cumpleaños como se debe.</p>
+                
+                <a href="../index.html" style="display: block; width: 200px; margin: 40px auto 0; padding: 15px; background-color: #8e24aa; color: white; text-align: center; text-decoration: none; border-radius: 10px; font-weight: bold;">Regresar a esperar</a>
+            </div>
+            
         </div>
     </div>
     
-    <!-- Script para los globitos -->
-    <script src="../script.js"></script>
+    <!-- Script del contador -->
+    <script>
+        let tiempo = 5;
+        const displayNumero = document.getElementById('numero');
+        const alerta = document.getElementById('fase-alerta');
+        const broma = document.getElementById('mensaje-broma');
+        
+        const cuentaRegresiva = setInterval(function() {
+            tiempo--;
+            displayNumero.textContent = tiempo;
+            
+            if (tiempo <= 0) {
+                clearInterval(cuentaRegresiva);
+                alerta.style.display = 'none';
+                broma.style.display = 'block';
+                
+                /* AQUÍ ESTÁ LA CORRECCIÓN DE LOS COLORES */
+                document.body.style.backgroundColor = '#fdf3f6';
+                document.body.style.color = '#333'; 
+                document.querySelector('.container').style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+                document.querySelector('.container').style.border = 'none';
+                document.querySelector('.titulo-principal').style.color = '#8e24aa';
+                document.querySelector('.titulo-principal').textContent = 'Falsa Alarma';
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
