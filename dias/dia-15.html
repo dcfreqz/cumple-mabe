@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡ALERTA!</title> 
+    <title>¡Feliz Cumpleaños Mabe!</title> 
     
     <!-- Favicon -->
     <link rel="icon" href="../logo.png">
@@ -11,96 +11,91 @@
     <!-- Estilos BTS -->
     <link rel="stylesheet" href="../style.css">
     
+    <!-- Librería de Confeti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
     <style>
-        body {
-            background-color: #111;
-            color: white;
-            transition: background-color 0.5s, color 0.5s;
-        }
-        .container {
-            background-color: #222;
-            border: 2px solid #d32f2f;
-            transition: background-color 0.5s, border 0.5s;
-        }
-        .titulo-principal {
-            color: #ff5252;
-            transition: color 0.5s;
-        }
-        #contador-box {
+        .video-container {
+            margin: 30px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(106, 27, 154, 0.3);
             text-align: center;
-            margin: 40px 0;
+            background-color: #000;
         }
-        .numero-contador {
-            font-size: 5em;
-            font-weight: 900;
-            color: #ff5252;
-            animation: parpadeo 1s infinite;
-        }
-        @keyframes parpadeo {
-            0% { opacity: 1; }
-            50% { opacity: 0.3; }
-            100% { opacity: 1; }
-        }
-        #mensaje-broma {
-            display: none;
-            text-align: center;
-            margin-top: 30px;
+        .video-container video {
+            width: 100%;
+            max-height: 500px;
+            display: block;
         }
     </style>
 </head>
 <body>
     <div class="container">
         
-        <h2 class="titulo-principal" style="font-size: 2.5em; text-align: center;">¡ALERTA DE INTRUSA!</h2>
+        <!-- Logo de la página -->
+        <img src="../logo.png" alt="Logo Cumple" class="logo-pagina">
+
+        <!-- Título del día -->
+        <h2 class="titulo-principal" style="font-size: 2.5em; margin-bottom: 10px; color: #d50000; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">¡Feliz Cumpleaños Mabe! 🎂💜</h2>
         
-        <div class="contenido-dia" style="font-size: 1.2em; line-height: 1.8;">
+        <!-- CONTENIDO DE LA CARTA -->
+        <div class="contenido-dia" style="text-align: left; line-height: 1.8; margin-top: 20px; font-size: 1.1em; color: #333;">
             
-            <div id="fase-alerta">
-                <p style="text-align: center; color: #ff5252; font-weight: bold; font-size: 1.5em;">Uy qué desobediente.</p>
-                <p style="text-align: center;">Ahí decía claramente NO TOCAR pero tu curiosidad pudo más JAJAJA.</p>
-                <p style="text-align: center;">Activando secuencia de autodestrucción de la página en...</p>
-                
-                <div id="contador-box">
-                    <span class="numero-contador" id="numero">5</span>
-                </div>
+            <p>Hola Mabe. Hoy es un día muy pero muy especial. Hoy es 15 de septiembre y hace 22 años nació una niña que llegaría a ser la luz de todos quienes la rodean.</p>
+
+            <p>Tu nombre para mí es único porque eres la única persona que conozco que se llama Mabel y me parece gracioso porque investigando descubrí que tu nombre representa totalmente lo que eres. Viene del latín amabilis y significa "amable", "adorable" o "digna de amor".</p>
+
+            <p>Y es la pura verdad porque eres amable y adorable como un mochi con lentes. Pero de lo que más seguro estoy es que sobre todo eres digna de amor. Espero que de alguna manera este día puedas apreciar ese amor de quienes te rodeamos porque no he conocido antes a nadie que merezca todo el amor del mundo como lo mereces tú. Yo sé que todos tenemos cosas buenas y malas dentro de nosotros mismos pero créeme que nunca nada de lo malo que puedas llegar a tener te hará menos digna de todo el amor que el mundo te pueda ofrecer.</p>
+            
+            <p>Espero que hoy sea un gran día a pesar de que tienes trabajo y estés ocupadita.</p>
+
+            <!-- AQUÍ VA EL VIDEO -->
+            <div class="video-container">
+                <video controls id="videoSorpresa">
+                    <source src="../video.mp4" type="video/mp4">
+                    Tu navegador no soporta videos.
+                </video>
             </div>
 
-            <div id="mensaje-broma">
-                <p style="color: #4caf50; font-weight: bold; font-size: 1.5em;">¡CAÍSTE JAJAJA!</p>
-                <p>No vas a ver ningún spoiler hoy. Tendrás que esperar a la medianoche para ver tu verdadero regalo.</p>
-                <p>Anda a dormir y nos vemos mañana para celebrar tu cumpleaños como se debe.</p>
-                
-                <a href="../index.html" style="display: block; width: 200px; margin: 40px auto 0; padding: 15px; background-color: #8e24aa; color: white; text-align: center; text-decoration: none; border-radius: 10px; font-weight: bold;">Regresar a esperar</a>
-            </div>
+            <p>Qué te puedo decir yo. Conmigo has sido una persona increíble, magnífica y una amistad bastante significativa. Espero que en algún momento la vida se encargue de reunirnos y poder celebrarlo como se debe. Te quiero muchísimo Mabel y la verdad las palabras se me quedan cortas para expresar todo el cariño que te tengo. Sé que hay muchísimo más tiempo y ocasiones para celebrarlo y demostrarlo pero espero que estas palabras sean suficientes por hoy.</p>
+
+            <p>Espero que la pases muy lindo y que cuando nos veamos podamos tomarnos mil fotos porque así podré subir una historia muy linda por tu cumpleaños JAJA.</p>
+
+            <p>Deseo que este año sea un año de bendiciones y buenas noticias. También espero que de todo lo malo que llegaras a pasar puedas aprender y mejorar.</p>
+
+            <p>Quiero que a lo largo del año logres recordar estos momentos en tus días de tristeza o cuando estés abrumada. Que recuerdes este tipo de días para que te sientas acompañada y querida. Que sepas que no estás sola y que siempre habrá una mano que te podrá ayudar cuando la necesites, no solo la mía sino la de todos los que te queremos.</p>
+
+            <p>Bueno te dejo dormir para que puedas descansar y que mañana puedas disfrutar. Espero que con estos 14 detallitos esté claro todo lo que te quiero. ¡Pásalo muy lindooooo! ¡Que viva la cumpleañera y que nunca dejes de cumplir! Espero que este sea el primero de muchos cumpleaños celebrándolos juntos.</p>
+
+            <p style="text-align: center; font-size: 2em; margin-top: 40px;">🎉💜🎂💜🎉</p>
             
         </div>
     </div>
     
-    <!-- Script del contador -->
+    <!-- Script para el confeti automático al abrir la página -->
     <script>
-        let tiempo = 5;
-        const displayNumero = document.getElementById('numero');
-        const alerta = document.getElementById('fase-alerta');
-        const broma = document.getElementById('mensaje-broma');
-        
-        const cuentaRegresiva = setInterval(function() {
-            tiempo--;
-            displayNumero.textContent = tiempo;
-            
-            if (tiempo <= 0) {
-                clearInterval(cuentaRegresiva);
-                alerta.style.display = 'none';
-                broma.style.display = 'block';
-                
-                /* AQUÍ ESTÁ LA CORRECCIÓN DE LOS COLORES */
-                document.body.style.backgroundColor = '#fdf3f6';
-                document.body.style.color = '#333'; 
-                document.querySelector('.container').style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
-                document.querySelector('.container').style.border = 'none';
-                document.querySelector('.titulo-principal').style.color = '#8e24aa';
-                document.querySelector('.titulo-principal').textContent = 'Falsa Alarma';
+        window.onload = function() {
+            var duration = 5 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+            function randomInRange(min, max) {
+              return Math.random() * (max - min) + min;
             }
-        }, 1000);
+
+            var interval = setInterval(function() {
+              var timeLeft = animationEnd - Date.now();
+
+              if (timeLeft <= 0) {
+                return clearInterval(interval);
+              }
+
+              var particleCount = 50 * (timeLeft / duration);
+              confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+              confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 250);
+        };
     </script>
 </body>
 </html>
